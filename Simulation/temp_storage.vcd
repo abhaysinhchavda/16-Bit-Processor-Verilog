@@ -1,0 +1,73 @@
+$date
+	Fri Mar 20 15:47:32 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module temp_storage_tb $end
+$var wire 16 ! temp_out [15:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reg_wr $end
+$var reg 16 $ temp_in [15:0] $end
+$scope module m $end
+$var wire 1 " clk $end
+$var wire 1 % comp_reg_wr $end
+$var wire 1 # reg_wr $end
+$var wire 16 & temp_in [15:0] $end
+$var wire 16 ' temp_out [15:0] $end
+$var reg 16 ( temp_register [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 (
+b0 '
+b11001111001100 &
+1%
+b11001111001100 $
+0#
+0"
+b0 !
+$end
+#10
+1"
+#20
+b11001111001100 !
+b11001111001100 '
+b11001111001100 (
+0"
+#30
+1"
+#40
+0%
+b1100110000110011 $
+b1100110000110011 &
+1#
+0"
+#50
+1"
+#60
+0"
+#70
+1"
+#80
+1%
+0#
+0"
+#90
+1"
+#100
+b1100110000110011 !
+b1100110000110011 '
+b1100110000110011 (
+0"
+#110
+1"
+#120
+0"
+#130
+1"

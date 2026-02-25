@@ -1,0 +1,59 @@
+$date
+	Fri Mar 20 00:21:48 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ns
+$end
+$scope module program_counter_tb $end
+$var wire 16 ! inst_addr [15:0] $end
+$var reg 1 " Pc_Ld $end
+$var reg 1 # Pc_Rst $end
+$var reg 16 $ Pc_addr_in [15:0] $end
+$var reg 1 % clk $end
+$scope module m $end
+$var wire 1 " Pc_Ld $end
+$var wire 1 # Pc_Rst $end
+$var wire 16 & Pc_addr_in [15:0] $end
+$var wire 1 % clk $end
+$var wire 16 ' inst_addr [15:0] $end
+$var reg 16 ( addr [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 (
+b0 '
+b111100001111 &
+0%
+b111100001111 $
+0#
+0"
+b0 !
+$end
+#10
+1%
+#20
+1#
+0%
+#30
+1%
+#40
+1"
+0%
+#50
+b111100001111 !
+b111100001111 '
+b111100001111 (
+1%
+#60
+0%
+#70
+1%
+#80
+0%
+#90
+1%

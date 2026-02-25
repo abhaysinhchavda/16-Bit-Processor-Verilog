@@ -1,0 +1,104 @@
+$date
+	Sat Mar 21 12:46:15 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ns
+$end
+$scope module status_reg_tb $end
+$var wire 5 ! flags_out [4:0] $end
+$var reg 1 " clk $end
+$var reg 5 # flags_in [4:0] $end
+$var reg 1 $ ld $end
+$var reg 1 % rst $end
+$scope module m $end
+$var wire 1 " clk $end
+$var wire 5 & flags_in [4:0] $end
+$var wire 5 ' flags_out [4:0] $end
+$var wire 1 $ ld $end
+$var wire 1 % rst $end
+$var reg 5 ( st_reg [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 (
+b0 '
+b1010 &
+x%
+1$
+b1010 #
+0"
+b0 !
+$end
+#10
+b1010 !
+b1010 '
+b1010 (
+1"
+#20
+b0 !
+b0 '
+b0 (
+0%
+0"
+#30
+1"
+#40
+0"
+#50
+1%
+1"
+#60
+0"
+#70
+b1010 !
+b1010 '
+b1010 (
+1"
+#80
+0"
+#90
+1"
+#100
+b10101 #
+b10101 &
+0$
+0"
+#110
+1"
+#120
+0"
+#130
+1"
+#140
+0"
+#150
+1$
+1"
+#160
+0"
+#170
+b10101 !
+b10101 '
+b10101 (
+1"
+#180
+0"
+#190
+1"
+#200
+0"
+#210
+1"
+#220
+0"
+#230
+1"
+#240
+0"
+#250
+1"

@@ -1,0 +1,36 @@
+$date
+	Fri Mar 20 15:02:36 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module sign_extend_tb $end
+$var wire 16 ! d_out [15:0] $end
+$var reg 5 " d_in [4:0] $end
+$scope module m $end
+$var wire 5 # d_in [4:0] $end
+$var wire 16 $ d_out [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b1010 !
+b1010 $
+b1010 "
+b1010 #
+#20
+b1111111111110101 !
+b1111111111110101 $
+b10101 "
+b10101 #
+#30

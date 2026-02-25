@@ -1,0 +1,94 @@
+$date
+	Thu Mar 19 18:48:18 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ns
+$end
+$scope module data_memory_tb $end
+$var wire 16 ! mem_d_out [15:0] $end
+$var reg 1 " clk $end
+$var reg 5 # mem_addr [4:0] $end
+$var reg 16 $ mem_d_in [15:0] $end
+$var reg 1 % mem_wr $end
+$scope module m $end
+$var wire 1 " clk $end
+$var wire 5 & mem_addr [4:0] $end
+$var wire 16 ' mem_d_in [15:0] $end
+$var wire 1 % mem_wr $end
+$var reg 16 ( mem_d_out [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz (
+bx '
+bx &
+0%
+bx $
+bx #
+0"
+bz !
+$end
+#10
+bx !
+bx (
+b0 #
+b0 &
+1"
+#20
+0"
+#30
+b110 !
+b110 (
+1"
+#40
+0"
+#50
+b1 #
+b1 &
+1"
+#60
+0"
+#70
+b101 !
+b101 (
+1"
+#80
+0"
+#90
+1"
+#100
+0"
+#110
+1"
+#120
+0"
+#130
+b1111 $
+b1111 '
+1%
+1"
+#140
+0"
+#150
+1"
+#160
+0"
+#170
+1"
+#180
+0"
+#190
+1"
+#200
+0"
+#210
+1"
+#220
+0"
+#230
+1"
