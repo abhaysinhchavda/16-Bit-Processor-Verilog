@@ -27,12 +27,12 @@ The processor is organized around two main blocks — the **Control Unit** (FSM-
                                     │ Control     │ Status
                                     │ Signals     │ Flags
                          ┌──────────▼────────────▼───────────┐
-                         │            Data Path               │
-                         │                                    │
+                         │            Data Path              │
+                         │                                   │
                          │  ┌──────┐  ┌────────────────┐     │
-                         │  │  PC  │─▶│ Instruction Mem│     │
+                         │  │  PC  │─▶│ Instruction Mem│     |
                          │  └──────┘  └───────┬────────┘     │
-                         │                    │ inst          │
+                         │                    │ inst         │
                          │  ┌─────────────────▼──────────┐   │
                          │  │       Register File        │   │
                          │  │      (32 x 16-bit)         │   │
@@ -51,12 +51,12 @@ The processor is organized around two main blocks — the **Control Unit** (FSM-
                          │    │  Status Register  │          │
                          │    │   [S Z N V C]     │          │
                          │    └───────────────────┘          │
-                         │                                    │
-                         │    ┌────────────────────┐          │
-                         │    │   Data Memory      │          │
-                         │    │   (32 x 16-bit)    │          │
-                         │    └────────────────────┘          │
-                         └────────────────────────────────────┘
+                         │                                   │
+                         │    ┌────────────────────┐         │
+                         │    │   Data Memory      │         │
+                         │    │   (32 x 16-bit)    │         │
+                         │    └────────────────────┘         │
+                         └───────────────────────────────────┘
 ```
 
 ---
@@ -128,10 +128,10 @@ The processor is organized around two main blocks — the **Control Unit** (FSM-
 | **ALU**                    | `alu.v`                        | 16-bit ALU supporting arithmetic, logical, and shift ops |
 | **Program Counter**        | `program_counter.v`            | 16-bit PC with reset and load capability                 |
 | **Instruction Memory**     | `instruction_memory.v`         | ROM storing the instruction set for execution            |
-| **Data Memory**            | `data_memory.v`                | 32 x 16-bit read/write data memory                      |
+| **Data Memory**            | `data_memory.v`                | 32 x 16-bit read/write data memory                       |
 | **Register File**          | `register_file.v`              | 32 x 16-bit general-purpose register file                |
-| **2x1 MUX**               | `mux_2x1.v`                    | 2-to-1 multiplexer for data selection                    |
-| **4x1 MUX**               | `mux_4x1.v`                    | 4-to-1 multiplexer for register write-back selection     |
+| **2x1 MUX**                | `mux_2x1.v`                    | 2-to-1 multiplexer for data selection                    |
+| **4x1 MUX**                | `mux_4x1.v`                    | 4-to-1 multiplexer for register write-back selection     |
 | **Sign Extend**            | `sign_extend.v`                | 5-bit to 16-bit sign extension unit                      |
 | **Status Register**        | `status_register.v`            | 5-bit status/flag register [S Z N V C]                   |
 | **Temp Storage**           | `temp_storage.v`               | Temporary storage register for MOV operations            |
@@ -201,9 +201,9 @@ RESET → FETCH → DECODE → POST_DECODE →
 
 | Tool              | Purpose                                      |
 |-------------------|----------------------------------------------|
-| **Verilog HDL**   | Hardware description language for design      |
-| **Icarus Verilog**| Open-source Verilog simulation and synthesis  |
-| **GTKWave**       | Waveform viewer for simulation analysis       |
+| **Verilog HDL**   | Hardware description language for design     |
+| **Icarus Verilog**| Open-source Verilog simulation and synthesis |
+| **GTKWave**       | Waveform viewer for simulation analysis      |
 
 ---
 
