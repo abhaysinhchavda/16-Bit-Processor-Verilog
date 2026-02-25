@@ -3,8 +3,7 @@
 > **Bachelor's Degree Final Year Project**
 >
 > **Author:** Abhaysinh Chavda
->
-> **Organization:** Eitra
+
 
 ---
 
